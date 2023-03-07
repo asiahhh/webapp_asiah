@@ -2,6 +2,25 @@
 <html>
   <head>
     <title>Asiah webapp</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}" />
   </head>
+  <body>
+    <h1>hello!</h1>
+    {% if intro %}
+    <p>{{ intro }}</p>
+    {% endif %}
+    <form method="post">
+      <input type="text" name="data"/>
+      <input type="submit" value="Send data"/>
+    </form>
+    
+    {% if data %}
+    {{ data }}
+    {% endif %}
+
+    {% for num in nums %}
+    <h3>{{num}}</h3>
+    {% endfor %}
+  </body>
 </html>
 <!--add form-->
