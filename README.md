@@ -4,4 +4,4 @@ desc
 
 app link
 
-replit link
+replit app link
